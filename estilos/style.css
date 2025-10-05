@@ -1,0 +1,121 @@
+    @charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+    :root {
+
+      /* Fonte */
+      --font: "Hanken Grotesk", sans-serif;
+
+      /* Primárias: */
+      --vermelho-claro: hsl(0, 100%, 67%);
+      --amarelo-alaranjado: hsl(39, 100%, 56%);
+      --verde-azulado: hsl(166, 100%, 37%);
+      --azul-cobalto: hsl(234, 85%, 45%);
+
+      /* Degradês: */
+      --azul-ardósia-claro: hsl(252, 100%, 67%);
+      --azul-royal-claro: hsl(241, 81%, 54%);
+      --azul-violeta: hsla(256, 72%, 46%, 1);
+      --azul-persa: hsla(241, 72%, 46%, 0);
+
+      /* Neutro: */
+      --branco: hsl(0, 0%, 100%);
+      --azul-claro: hsl(221, 100%, 96%);
+      --lavanda-claro: hsl(241, 100%, 89%);
+      --azul-acinzentado-escuro: hsl(224, 30%, 27%);
+    }
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--azul-claro);
+    }
+
+    main {
+      margin: auto;
+      width: 90vw;
+      height: 90vh;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: center;
+    }
+
+    section#result {
+      width: 300px;
+      height: 400px;
+      background-image: linear-gradient(to top, var(--azul-royal-claro), var(--azul-ardósia-claro));
+      color: var(--branco);
+      text-align: center;
+      align-content: center;
+      margin: 20px 0px 20px 20px;
+      border-radius: 20px;
+      padding: 40px;
+    }
+
+    section#result>h1 {
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 0.600);
+      padding: 0px 20px 20px 20px;
+    }
+
+    section#result>div {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 20px;
+      background-image: linear-gradient(to bottom, var(--azul-violeta), hsla(241, 81%, 54%, 0.11));
+    }
+
+    section#result>div>p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section#result>div>p#numb {
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    section#result>div>p#transp {
+      color: rgba(255, 255, 255, 0.400);
+    }
+
+    section#result>h2 {
+      padding: 0px 0px 10px 0px;
+    }
+
+    section#result>p#descri {
+      color: rgba(255, 255, 255, 0.400);
+    }
+
+    section#sum {
+      width: 300px;
+      height: 400px;
+      background-color: var(--branco);
+      text-align: center;
+      align-content: center;
+      margin: 20px 20px 20px 0px;
+      border-radius: 0px 20px 20px 0px;
+      padding: 40px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
