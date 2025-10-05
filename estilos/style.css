@@ -111,6 +111,11 @@
       padding: 40px;
     }
 
+    section#sum>div {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
